@@ -1,5 +1,109 @@
-body {background-color: lightblue; font-family: arial; sans-serif; text-align: centre; margin-top: 50px;}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
 
-h1 {color: darkblue;}
+body {
+    background-color: #0b0c10; 
+    color: #c5c6c7; 
+}
 
-p {color: #333333; font-size: 20px;}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #1f2833;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: #66fcf1; 
+}
+
+.logo span {
+    color: #ffffff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #66fcf1;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+h1 {
+    font-size: 55px;
+    color: #66fcf1;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: transparent;
+    color: #66fcf1;
+    border: 2px solid #66fcf1;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s; 
+}
+
+.btn:hover {
+    background-color: #66fcf1;
+    color: #0b0c10;
+}
+
+.hero-image {
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(102, 252, 241, 0.4); /* Adds a neon glow around the image */
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px;
+}
+
+.card {
+    background-color: #1f2833;
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    border-top: 5px solid #66fcf1;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-15px); 
+}
